@@ -1,0 +1,154 @@
+    /*Diseño background*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #405DE6; 
+        background-image: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Gradiente multicolor */
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+        color: white;
+      }
+
+    .header{
+    
+        background-color: #405DE6;
+        background-image: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Gradiente multicolor */
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+        padding: 10px;
+     }
+
+     .container .post {
+        background-color: #405DE6; 
+        background-image: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Gradiente multicolor */
+        background-size: 400% 400%;
+    }
+
+    .paragraph{ 
+        background-color: #405DE6; 
+        background-image: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Gradiente multicolor */
+        background-size: 400% 400%;
+    }
+
+    /*Animación de CSS utilizando @keyframes*/
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /*Estilos y color de fuentes */
+
+    .container .post .post-header h2,
+    .container .post .post-header span {
+        color: white; 
+    }
+    
+    .post-header{
+        font-family:'Montserrat';
+        font-size: 12px;
+    }
+
+    /*Maquetacion estructural */
+
+    div{
+        box-sizing: border-box;
+    }
+
+    header h1{
+        margin: 0;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+
+    div.post{
+        background: white;
+        margin-top: 50px;
+    }
+    
+    div.post img{
+        width: 600px ;
+        height: 580px;
+    }
+
+    div.post .post-header div:first-child{
+        display: inline-block;
+        width: 80%;
+    }
+
+    div.post .post-header div:last-child{
+        display: inline-block;
+        width: 20%;
+        text-align: right;
+        padding: 10px;
+        color: gray;
+    }
+
+    div.post h2, div.post p{
+        padding: 10px;
+    }
+
+    div.container{
+        width: 600px;
+        margin: auto; 
+    }
+    /* Estilos para los íconos */
+
+    .iconos {
+        margin-bottom: 1%; 
+        margin-left: 1%;
+        
+        
+    }
+    
+    .iconos i {
+        
+        margin-right: 1%; 
+        font-size: 20px;
+        padding: 5px; 
+        transition: background-color 0.3s ease;
+        
+    
+    }
+
+    .iconos i:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+   }
+
+   /*Casilla de comentarios y button*/
+    .comentarios {
+    margin-top: 20px; 
+    }
+
+    .comentarios textarea {
+    width: 96%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: vertical; 
+    }
+
+    .comentarios button {
+    background-color: #405DE6; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 15px;
+    }
+
+    .comentarios button:hover {
+    background-color: #3149AF; 
+    }   
